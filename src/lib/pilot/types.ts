@@ -36,9 +36,9 @@ export interface DayStatus {
   createdAt: string;
   lines: { variant: Variant; sold: number; discarded: number; thawedNotSold: number }[];
   priceOverride?: number | null;
-  discountNote?: string;
+  discountNote?: string | undefined;
   workflow: WorkflowRating;
-  comment?: string;
+  comment?: string | undefined;
   revenue: number;
 }
 
@@ -48,7 +48,7 @@ export interface WeeklyObservation {
   createdAt: string;
   answers: Record<string, string>;
   comments: Record<string, string>;
-  ideas?: string;
+  ideas?: string | undefined;
 }
 
 export type DeviationType =
@@ -76,7 +76,7 @@ export interface Deviation {
   affectedQty: number;
   remainingQty: number;
   description: string;
-  photo?: string | null;
+  photo?: string | null | undefined;
   notified: boolean;
 }
 
