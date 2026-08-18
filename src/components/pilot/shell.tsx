@@ -1,4 +1,3 @@
-<<<<<<PATCH
 import { Link, useRouterState } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { Settings2 } from "lucide-react";
@@ -72,4 +71,3 @@ export function Stat({
     </div>
   );
 }
-PATCH>>>>>>
