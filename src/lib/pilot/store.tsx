@@ -46,9 +46,9 @@ interface Ctx {
   saveDayStatus: (input: {
     lines: DayStatus["lines"];
     priceOverride?: number | null;
-    discountNote?: string;
+    discountNote?: string | undefined;
     workflow: DayStatus["workflow"];
-    comment?: string;
+    comment?: string | undefined;
   }) => void;
   saveWeekly: (input: Omit<WeeklyObservation, "id" | "createdAt" | "weekKey">) => void;
   saveDeviation: (input: Omit<Deviation, "id" | "createdAt" | "notified">) => void;
